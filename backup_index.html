@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Data -->
+    <title>Alcon Vision Sim</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./images/favicon.ico">
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <script>
+        window.onpageshow = function () {
+            if (performance.navigation.type == "back_forward") {
+                location.reload();
+            }
+            history.scrollRestoration = "manual";
+            window.scrollTo(0, 0);
+        }
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-61MDD7W8TX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-61MDD7W8TX');
+    </script>
+
+    <script src="./scripts/mobilechecker.js"></script>
+
+    <script>
+        window.onload = (e) => {
+            
+        }
+
+        window.onpageshow = function (event) {
+            console.log(event);
+            window.location = "./pages/presbyopia.html";
+            if (event.persisted) {
+                location.reload();
+            }
+        };
+    </script>
+</head>
+
+<body id="intro" onload="">
+
+</body>
+
+<script src="./scripts/bootstrap.min.js"></script>
+<script src="./scripts/main.js"></script>
+
+</html>

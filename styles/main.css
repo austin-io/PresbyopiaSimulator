@@ -1,0 +1,189 @@
+:root {
+    --bannerAnim-direction: normal;
+    --backgroundImage: url("/VisionSim/images/Background1.jpg");
+    --infoIcon: url("/VisionSim/images/infoIcon_small.png");
+    --softBlackBox: url("/VisionSim/images/SoftBlackBox.png");
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+.fade-in-animation {
+    animation: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.fade-out-animation {
+    animation: fadeOut; 
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+@media screen {
+    #logo {
+        background: rgba(255,255,255,1);
+        background-repeat: repeat-y;
+        background-size: 100vw, 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+}
+
+
+
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.mainCardLook {
+    backdrop-filter: blur(4px);
+    color: black;
+    padding: 0% 3% 0% 3%;
+    max-width: 90%;
+    margin: 15px auto;
+    background: rgba(200,200,200,0.5);
+}
+
+#diseaseSelection {
+    top: 12rem; 
+}
+
+
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--eyeImage);
+}
+
+.removeBackground {
+    background: 0;
+}
+
+#intro {
+    background-image: var(--backgroundImage);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.accordion-button-inner b {
+    padding-left: 5%;
+}
+
+.infoDropDownBox {
+    background-clip: padding-box;
+    background-color: #9B9B9B;
+}
+
+.infoAccordion {
+    position: absolute;
+    top: auto;
+    bottom: calc(100vh / 375 * 40);
+    margin: 5%;
+    width: 90%;
+}
+
+a {
+    color: black;
+    padding-left: 5%;
+    white-space: nowrap;
+}
+
+a:active {
+    color: black;
+}
+
+
+#footer {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 5vh;
+
+}
+
+#footer a {
+    color: rgba(255,255,255,0.8);
+    font-family: sans-serif;
+    opacity: 1;
+    font-weight: bold;
+    padding-left: 0;
+}
+
+.accordion-body .accordion-item:first-child .firstItem {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.accordion-body .accordion-item:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.accordion-body .accordion-item:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.accordion-body .accordion-item:last-child .accordion-button-inner .lastItem .collapsed {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.accordion-body .accordion-item:last-of-type .accordion-button-inner.collapsed{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.innerAccordionBlur {
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#splashTitle {
+    color: black;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 20rem;
+}
+
+
+.vistaLogo {
+    display: block;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#termsModal {
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.7);
+    border-radius: 0.5rem;
+}
+
+#termsModal > button {
+    border: none;
+    border-radius: 0.5rem;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    width: fit-content;
+}

@@ -1,0 +1,222 @@
+:root {
+  --photoImage: url("/VisionSim/images/Photo_line.webp");
+  --camImage: url("/VisionSim/images/camera_line_smoosh.webp");
+  --staticFilterImage: url("/VisionSim/images/Background1.jpg");
+  --wheelRotation: -67deg;
+  --wheelXPos: -315; /* -360 hidden -315 out */
+  --homeIcon: url("/VisionSim/images/houseIcon2.png");
+
+}
+
+@keyframes wheelOut {
+  from {right: calc(100vh / 677 * -360);}
+  to {right: calc(100vh / 677 * -315);}
+}
+
+@keyframes wheelIn {
+  from {right: calc(100vh / 677 * -315);}
+  to {right: calc(100vh / 677 * -360);}
+}
+
+.wheelOut {
+  animation: wheelOut;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.wheelIn {
+  animation: wheelIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+
+html {
+  overflow: hidden;
+  position: fixed;
+  overscroll-behavior: contain;
+}
+
+body {
+  margin: 0px;
+  height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+
+.backButton {
+  border: none;
+  display: block;
+  margin: 4%;
+  position: absolute;
+  padding: 12%;
+  right: 0;
+  border-radius: 50%;
+  background-image: var(--backButtonImage);
+  background-repeat: no-repeat;
+  background-size: 77%;
+  background-position: center;
+  opacity: 90%;
+  backdrop-filter: blur(5px);
+}
+
+
+#size_display {
+  color: red;
+  font-size: 2em;
+  position: absolute;
+  top: 20px;
+  left: calc(50vw - 150px);
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#container canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+#loaderImg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 10;
+}
+
+#loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  left: auto;
+  top: 35vh;
+  right: 35vw;
+  bottom: auto;
+  border-top-color: #00AEEF;
+  z-index: 2;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} 
+
+.conditionText {
+  display: block;
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: 4%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 0% 10%;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 140%;
+}
+
+#socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 5%;
+}
+
+#socials button {
+  border: none;
+  padding: 0px;
+  background-color: #9B9B9B;
+}
+
+.underline {
+  height:0;
+  border-style: solid;
+  border-width: thin;
+  padding-left: 100%;
+  padding-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  padding-bottom: 0;
+  width: 0;
+  font-size: 20%;
+}
+
+.homeButton {
+  display:block;
+  margin: 3%;
+  position: absolute;
+  padding: 8%;
+  left: 0;
+  background-image: var(--homeIcon);
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+  border: none;
+  border-radius: 0%;
+  background-color: transparent;
+  z-index: 5;
+}
+
+.viewButton {
+  position: absolute;
+  margin: auto;
+  right: 6%;
+  border: 0;
+  background-size: 100%;
+  top: 4%;
+  padding: 5%;
+  background-image: var(--photoImage);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  z-index: 5;
+}
+
+.wheel {
+  display: block;
+  position: absolute;
+  opacity: 80%;
+  margin: auto;
+  top: 20vh;
+  transform-origin: center;
+  transform: rotate(var(--wheelRotation));
+  right: calc(100vh / 677 * var(--wheelXPos));
+}
+
+.wheel img {
+  width: calc(100vh / 677 * 400);
+  height: calc(100vh / 677 * 400);
+}
+
+p {
+  max-height: 40vh;
+  overflow-y: scroll;
+}
+
+.branding {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  padding: 0.5rem 0.5rem 0rem 0rem;
+  border-radius: 1rem;
+  background-color: #0004;
+}
+
+.branding > img {
+  padding: 0;
+  margin: 0;
+  width: 80px;
+}

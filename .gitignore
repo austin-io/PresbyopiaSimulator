@@ -1,0 +1,40 @@
+
+# Exclude everything but jsm folder
+
+/scripts/library/three.js/*
+!/scripts/library/three.js/examples
+!/scripts/library/three.js/build
+/scripts/library/three.js/build/*
+!/scripts/library/three.js/build/three.module.js
+!/scripts/library/three.js/build/three.min.js
+
+# Exclude everything but libs, postprocessing, and shaders folder
+/scripts/library/three.js/examples/*
+!/scripts/library/three.js/examples/jsm
+/scripts/library/three.js/examples/jsm/*
+
+!/scripts/library/three.js/examples/jsm/libs
+/scripts/library/three.js/examples/jsm/libs/*
+!/scripts/library/three.js/examples/jsm/libs/dat.gui.module.js
+
+!/scripts/library/three.js/examples/jsm/postprocessing
+/scripts/library/three.js/examples/jsm/postprocessing/*
+!/scripts/library/three.js/examples/jsm/postprocessing/EffectComposer.js
+!/scripts/library/three.js/examples/jsm/postprocessing/MaskPass.js
+!/scripts/library/three.js/examples/jsm/postprocessing/Pass.js
+!/scripts/library/three.js/examples/jsm/postprocessing/RenderPass.js
+!/scripts/library/three.js/examples/jsm/postprocessing/ShaderPass.js
+
+!/scripts/library/three.js/examples/jsm/shaders
+/scripts/library/three.js/examples/jsm/shaders/*
+!/scripts/library/three.js/examples/jsm/shaders/CopyShader.js
+!/scripts/library/three.js/examples/jsm/shaders/HorizontalBlurShader.js
+!/scripts/library/three.js/examples/jsm/shaders/VerticalBlurShader.js
+
+# Exclude Bootstrap styles that are not needed
+/styles/*
+!/styles/bootstrap.css
+!/styles/main.css
+!/styles/mainfilter.css
+!/styles/blink.css
+!/styles/blinkAllergies.css
