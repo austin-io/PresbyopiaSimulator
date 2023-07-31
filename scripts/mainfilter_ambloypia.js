@@ -3,7 +3,7 @@ import { wheelRotation, UsingSmallWheel} from './mainfilter.js'
 import * as THREE from "./library/three.js/build/three.module.js";
 import { hblur } from './ambloypia.js'
 import { vblur } from './ambloypia.js'
-import { material, mesh, scene } from "/VisionSim/scripts/ambloypia.js";
+import { material, mesh, scene } from "/elara-site-test.s3-website-us-east-1.amazonaws.com/scripts/ambloypia.js";
 
 
 UsingSmallWheel();
@@ -19,7 +19,7 @@ camera = true;
 function cameraToggle() {
     var style = getComputedStyle(document.body);
     if(camera) {
-        var texture = new THREE.TextureLoader().load('/VisionSim/images/static_amblyopia.jpg');
+        var texture = new THREE.TextureLoader().load('/elara-site-test.s3-website-us-east-1.amazonaws.com/images/static_amblyopia.jpg');
         viewButton.style.backgroundImage = "var(--camImage)";
         scene.background = texture;
     } else {

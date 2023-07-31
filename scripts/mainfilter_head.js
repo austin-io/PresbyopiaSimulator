@@ -15,7 +15,7 @@ let regexp = /android|iphone|kindle|ipad/i;
 let isMobileDevice = regexp.test(details);
 
 if(!isMobileDevice) {
-    //window.location = "https://esproduction.github.io/VisionSim/pages/QRCode.html";
+    //window.location = "https://esproduction.github.io/elara-site-test.s3-website-us-east-1.amazonaws.com/pages/QRCode.html";
 }
 
 function facebookClick() {
@@ -61,5 +61,5 @@ function getHref() {
 }
 
 function GoHome() {
-  window.location = "/VisionSim/index.html";
+  window.location = "/elara-site-test.s3-website-us-east-1.amazonaws.com/index.html";
 }

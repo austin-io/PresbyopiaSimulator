@@ -2,7 +2,7 @@
 import { ablur } from './AMDdry2.js'
 import { wheelRotation } from './mainfilter.js'
 import * as THREE from "./library/three.js/build/three.module.js";
-import { material, mesh, material1, controls } from "/VisionSim/scripts/AMDdry2.js";
+import { material, mesh, material1, controls } from "/elara-site-test.s3-website-us-east-1.amazonaws.com/scripts/AMDdry2.js";
 
 var viewButton = document.getElementsByClassName("viewButton")[0];
 var camera;
@@ -14,7 +14,7 @@ camera = true;
 function cameraToggle() {
     var style = getComputedStyle(document.body);
     if(camera) {
-        var texture = new THREE.TextureLoader().load('/VisionSim/images/static_amddry.jpg');
+        var texture = new THREE.TextureLoader().load('/elara-site-test.s3-website-us-east-1.amazonaws.com/images/static_amddry.jpg');
         viewButton.style.backgroundImage = "var(--camImage)";
     } else {
         var texture = new THREE.VideoTexture(video);

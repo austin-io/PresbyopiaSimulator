@@ -38,7 +38,7 @@ setInterval(function() {
 function cameraToggle() {
     var style = getComputedStyle(document.body);
     if(camera) {
-        var texture = new THREE.TextureLoader().load('/VisionSim/images/static_allergy.jpg');
+        var texture = new THREE.TextureLoader().load('/elara-site-test.s3-website-us-east-1.amazonaws.com/images/static_allergy.jpg');
         viewButton.style.backgroundImage = "var(--camImage)";
     } else {
         var texture = new THREE.VideoTexture(video);
