@@ -59,7 +59,7 @@ function init() {
   if(cameraToggle && !getWebCamVideoInput()) {
     stopCamera(stream);
     cameraToggle = false;
-    var newTexture = new THREE.TextureLoader().load('/VisionSim/images/Background2.jpg');
+    var newTexture = new THREE.TextureLoader().load('/elara-site-test.s3-website-us-east-1.amazonaws.com/images/Background2.jpg');
     mesh.material = new THREE.MeshBasicMaterial({
       map: newTexture
     })

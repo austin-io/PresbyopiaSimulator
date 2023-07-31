@@ -1,10 +1,10 @@
 :root {
-  --photoImage: url("/VisionSim/images/Photo_line.webp");
-  --camImage: url("/VisionSim/images/camera_line_smoosh.webp");
-  --staticFilterImage: url("/VisionSim/images/Background1.jpg");
+  --photoImage: url("/images/Photo_line.webp");
+  --camImage: url("/images/camera_line_smoosh.webp");
+  --staticFilterImage: url("/images/Background1.jpg");
   --wheelRotation: -67deg;
   --wheelXPos: -315; /* -360 hidden -315 out */
-  --homeIcon: url("/VisionSim/images/houseIcon2.png");
+  --homeIcon: url("/images/houseIcon2.png");
 
 }
 

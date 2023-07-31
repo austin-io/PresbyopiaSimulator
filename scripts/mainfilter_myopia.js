@@ -2,7 +2,7 @@
 import { mblur } from './myopia.js'
 import { wheelRotation } from './mainfilter.js'
 import * as THREE from "./library/three.js/build/three.module.js";
-import { material, mesh, scaleMesh } from "/VisionSim/scripts/myopia.js";
+import { material, mesh, scaleMesh } from "/elara-site-test.s3-website-us-east-1.amazonaws.com/scripts/myopia.js";
 
 var viewButton = document.getElementsByClassName("viewButton")[0];
 
@@ -15,7 +15,7 @@ camera = true;
 function cameraToggle() {
     var style = getComputedStyle(document.body);
     if(camera) {
-        var texture = new THREE.TextureLoader().load('/VisionSim/images/static_myhypres.jpg');
+        var texture = new THREE.TextureLoader().load('/elara-site-test.s3-website-us-east-1.amazonaws.com/images/static_myhypres.jpg');
         viewButton.style.backgroundImage = "var(--camImage)";
         scaleMesh(true);
     } else {

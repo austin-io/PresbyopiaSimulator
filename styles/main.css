@@ -1,8 +1,8 @@
 :root {
     --bannerAnim-direction: normal;
-    --backgroundImage: url("/VisionSim/images/Background1.jpg");
-    --infoIcon: url("/VisionSim/images/infoIcon_small.png");
-    --softBlackBox: url("/VisionSim/images/SoftBlackBox.png");
+    --backgroundImage: url("/elara-site-test.s3-website-us-east-1.amazonaws.com/images/Background1.jpg");
+    --infoIcon: url("/elara-site-test.s3-website-us-east-1.amazonaws.com/images/infoIcon_small.png");
+    --softBlackBox: url("/elara-site-test.s3-website-us-east-1.amazonaws.com/images/SoftBlackBox.png");
 }
 
 @keyframes fadeIn {
