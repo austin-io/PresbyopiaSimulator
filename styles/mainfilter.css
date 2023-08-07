@@ -212,7 +212,9 @@ p {
   left: 0.5rem;
   padding: 0.5rem;
   border-radius: 1rem;
-  background-color: #ded6e6;
+  /*background-color: #ded6e6;*/
+  background-color: #0006;
+
 }
 
 .branding > img {
