@@ -15,7 +15,7 @@ let regexp = /android|iphone|kindle|ipad/i;
 let isMobileDevice = regexp.test(details);
 
 if(!isMobileDevice) {
-    //window.location = "https://esproduction.github.io/pages/QRCode.html";
+    //window.location = "[BASE_URL]/pages/QRCode.html";
 }
 
 function facebookClick() {
