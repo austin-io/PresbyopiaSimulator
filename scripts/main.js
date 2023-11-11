@@ -25,22 +25,22 @@ function SplashScreenLogo() {
 
     //Setting the three eye images based on index
     var refracElement = document.getElementById("refractive");
-    refracElement.style.setProperty("--eyeImage", "url(" + '/VisionSim/images/' + refracImages[index] + ")");
+    refracElement.style.setProperty("--eyeImage", "url(" + '/PresbyopiaSimulator/images/' + refracImages[index] + ")");
     
     var retElement = document.getElementById("retinal");
-    retElement.style.setProperty("--eyeImage", "url(" + '/VisionSim/images/' + retImages[index] + ")");
+    retElement.style.setProperty("--eyeImage", "url(" + '/PresbyopiaSimulator/images/' + retImages[index] + ")");
     
     var lensElement = document.getElementById("lens");
-    lensElement.style.setProperty("--eyeImage", "url(" + '/VisionSim/images/' + lensImages[index] + ")");
+    lensElement.style.setProperty("--eyeImage", "url(" + '/PresbyopiaSimulator/images/' + lensImages[index] + ")");
     
     var musElement = document.getElementById("muscle");
-    musElement.style.setProperty("--eyeImage", "url(" + '/VisionSim/images/' + musImages[index] + ")");
+    musElement.style.setProperty("--eyeImage", "url(" + '/PresbyopiaSimulator/images/' + musImages[index] + ")");
     
     var ocularElement = document.getElementById("ocular");
-    ocularElement.style.setProperty("--eyeImage", "url(" + '/VisionSim/images/' + ocularImages[index] + ")");
+    ocularElement.style.setProperty("--eyeImage", "url(" + '/PresbyopiaSimulator/images/' + ocularImages[index] + ")");
 
     //Setting the background image based on index
-    root.style.setProperty("--backgroundImage", "url(" + '/VisionSim/images/' + backgroundImages[index] + ")");
+    root.style.setProperty("--backgroundImage", "url(" + '/PresbyopiaSimulator/images/' + backgroundImages[index] + ")");
     
     //SplashScreenAnimation
     AddClassTo(logo,"fade-out-animation");

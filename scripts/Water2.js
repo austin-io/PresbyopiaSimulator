@@ -44,9 +44,9 @@ class Water extends Mesh {
 		const textureLoader = new TextureLoader();
 
 		const flowMap =  undefined;
-		const normalMap0 = textureLoader.load( '/VisionSim/images/water_1.jpg' );
-		const normalMap1 = textureLoader.load( '/VisionSim/images/water_2.jpg' );
-		const mask = textureLoader.load( '/VisionSim/images/grad2.png' );
+		const normalMap0 = textureLoader.load( '/PresbyopiaSimulator/images/water_1.jpg' );
+		const normalMap1 = textureLoader.load( '/PresbyopiaSimulator/images/water_2.jpg' );
+		const mask = textureLoader.load( '/PresbyopiaSimulator/images/grad2.png' );
 
 		const cycle = 0.15; // a cycle of a flow map phase
 		const halfCycle = cycle * 0.5;

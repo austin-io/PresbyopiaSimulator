@@ -1,8 +1,8 @@
 :root {
     --bannerAnim-direction: normal;
-    --backgroundImage: url("/VisionSim/images/Background1.jpg");
-    --infoIcon: url("/VisionSim/images/infoIcon_small.png");
-    --softBlackBox: url("/VisionSim/images/SoftBlackBox.png");
+    --backgroundImage: url("/PresbyopiaSimulator/images/Background1.jpg");
+    --infoIcon: url("/PresbyopiaSimulator/images/infoIcon_small.png");
+    --softBlackBox: url("/PresbyopiaSimulator/images/SoftBlackBox.png");
 }
 
 @keyframes fadeIn {

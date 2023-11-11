@@ -2,7 +2,7 @@
 import { mblur } from './presbyopia.js'
 import { wheelRotation } from './mainfilter.js'
 import * as THREE from "./library/three.js/build/three.module.js";
-import { material, mesh, scaleMesh } from "/VisionSim/scripts/presbyopia.js";
+import { material, mesh, scaleMesh } from "/PresbyopiaSimulator/scripts/presbyopia.js";
 
 var viewButton = document.getElementsByClassName("viewButton")[0];
 var camera;
@@ -13,7 +13,7 @@ camera = true;
 function cameraToggle() {
     var style = getComputedStyle(document.body);
     if(camera) {
-        var texture = new THREE.TextureLoader().load('/VisionSim/images/static_presbyopia.jpg');
+        var texture = new THREE.TextureLoader().load('/PresbyopiaSimulator/images/static_presbyopia.jpg');
         viewButton.style.backgroundImage = "var(--camImage)";
         scaleMesh(true);
     } else {

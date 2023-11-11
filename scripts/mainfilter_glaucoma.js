@@ -2,7 +2,7 @@
 import { wheelRotation } from './mainfilter.js'
 import { gblur } from './glaucoma.js'
 import * as THREE from "./library/three.js/build/three.module.js";
-import { material, mesh } from "/VisionSim/scripts/glaucoma.js";
+import { material, mesh } from "/PresbyopiaSimulator/scripts/glaucoma.js";
 
 var viewButton = document.getElementsByClassName("viewButton")[0];
 
@@ -15,7 +15,7 @@ camera = true;
 function cameraToggle() {
     var style = getComputedStyle(document.body);
     if(camera) {
-        var texture = new THREE.TextureLoader().load('/VisionSim/images/static_glaucoma.jpg');
+        var texture = new THREE.TextureLoader().load('/PresbyopiaSimulator/images/static_glaucoma.jpg');
         viewButton.style.backgroundImage = "var(--camImage)";
     } else {
         var texture = new THREE.VideoTexture(video);

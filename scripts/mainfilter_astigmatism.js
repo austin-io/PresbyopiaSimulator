@@ -3,8 +3,8 @@ import { dblur } from './astigmatism.js'
 import { ablur } from './astigmatism.js'
 import { wheelRotation } from './mainfilter.js'
 import * as THREE from "./library/three.js/build/three.module.js";
-import { material, mesh1, material1 } from "/VisionSim/scripts/astigmatism.js";
-import { onWindowResize } from "/VisionSim/scripts/astigmatism.js";
+import { material, mesh1, material1 } from "/PresbyopiaSimulator/scripts/astigmatism.js";
+import { onWindowResize } from "/PresbyopiaSimulator/scripts/astigmatism.js";
 
 var viewButton = document.getElementsByClassName("viewButton")[0];
 
@@ -17,7 +17,7 @@ camera = true;
 function cameraToggle() {
     var style = getComputedStyle(document.body);
     if(camera) {
-        var texture = new THREE.TextureLoader().load('/VisionSim/images/static_astigmatism.jpg');
+        var texture = new THREE.TextureLoader().load('/PresbyopiaSimulator/images/static_astigmatism.jpg');
         viewButton.style.backgroundImage = "var(--camImage)";
         ablur.uniforms.angle.value = 1;
         dblur.uniforms.size.value = 0;

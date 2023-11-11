@@ -58,7 +58,7 @@ function init() {
   if(cameraToggle && !getWebCamVideoInput()) {
     stopCamera(stream);
     cameraToggle = false;
-    var newTexture = new THREE.TextureLoader().load('/VisionSim/images/Background2.jpg');
+    var newTexture = new THREE.TextureLoader().load('/PresbyopiaSimulator/images/Background2.jpg');
     mesh.material = new THREE.MeshBasicMaterial({
       map: newTexture
     })

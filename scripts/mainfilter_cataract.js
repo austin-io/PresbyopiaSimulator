@@ -4,7 +4,7 @@ import { hblur } from './cataract.js'
 import { vblur } from './cataract.js'
 import { wheelRotation } from './mainfilter.js'
 import * as THREE from "./library/three.js/build/three.module.js";
-import { material, mesh } from "/VisionSim/scripts/cataract.js";
+import { material, mesh } from "/PresbyopiaSimulator/scripts/cataract.js";
 
 var viewButton = document.getElementsByClassName("viewButton")[0];
 
@@ -17,7 +17,7 @@ camera = true;
 function cameraToggle() {
     var style = getComputedStyle(document.body);
     if(camera) {
-        var texture = new THREE.TextureLoader().load('/VisionSim/images/static_cataract.webp');
+        var texture = new THREE.TextureLoader().load('/PresbyopiaSimulator/images/static_cataract.webp');
         viewButton.style.backgroundImage = "var(--camImage)";
     } else {
         var texture = new THREE.VideoTexture(video);
