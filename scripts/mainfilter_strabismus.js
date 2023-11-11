@@ -1,7 +1,7 @@
 // Imports
 import { wheelRotation, UsingSmallWheel} from './mainfilter.js'
 import * as THREE from "./library/three.js/build/three.module.js";
-import {ablur, material, mesh } from "/VisionSim/scripts/strabismus.js";
+import {ablur, material, mesh } from "/scripts/strabismus.js";
 // import { scene } from './strabismus.js';
 
 
@@ -18,7 +18,7 @@ camera = true;
 function cameraToggle() {
     var style = getComputedStyle(document.body);
     if(camera) {
-        var texture = new THREE.TextureLoader().load('/VisionSim/images/static_strabismus.jpg');
+        var texture = new THREE.TextureLoader().load('/images/static_strabismus.jpg');
         viewButton.style.backgroundImage = "var(--camImage)";
     } else {
         var texture = new THREE.VideoTexture(video);

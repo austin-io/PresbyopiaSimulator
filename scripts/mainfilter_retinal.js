@@ -2,7 +2,7 @@
 import { ablur } from './retinal.js'
 import { wheelRotation } from './mainfilter.js'
 import * as THREE from "./library/three.js/build/three.module.js";
-import { material, mesh } from "/VisionSim/scripts/retinal.js";
+import { material, mesh } from "/scripts/retinal.js";
 
 var viewButton = document.getElementsByClassName("viewButton")[0];
 var camera;
@@ -14,7 +14,7 @@ camera = true;
 function cameraToggle() {
     var style = getComputedStyle(document.body);
     if(camera) {
-        var texture = new THREE.TextureLoader().load('/VisionSim/images/static_retinal.jpg');
+        var texture = new THREE.TextureLoader().load('/images/static_retinal.jpg');
         viewButton.style.backgroundImage = "var(--camImage)";
     } else {
         var texture = new THREE.VideoTexture(video);

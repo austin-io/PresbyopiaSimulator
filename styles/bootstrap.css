@@ -57,8 +57,8 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
-  --eyeImage: url("/VisionSim/images/Background3-Lens.png");
-  --arrow: url("/VisionSim/images/infoIcon_small.png");
+  --eyeImage: url("/images/Background3-Lens.png");
+  --arrow: url("/images/infoIcon_small.png");
 }
 
 *,
